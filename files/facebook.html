@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+        .container {
+            max-width: 400px;
+            margin: 100px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background-color: #4267B2;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #3b5998;
+        }
+        .separator {
+            text-align: center;
+            margin: 20px 0;
+            color: #8d949e;
+            font-size: 14px;
+        }
+        .separator:before,
+        .separator:after {
+            content: "";
+            display: inline-block;
+            width: 45%;
+            height: 1px;
+            background-color: #dfe0e4;
+            vertical-align: middle;
+        }
+        .separator:before {
+            margin-right: 15px;
+        }
+        .separator:after {
+            margin-left: 15px;
+        }
+        .or {
+            text-align: center;
+            margin: 20px 0;
+            color: #8d949e;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Log in to Facebook</h2>
+    <form action="#" method="post">
+        <div class="input-group">
+            <label for="email">Email or Phone:</label>
+            <input type="text" id="email" name="email" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" class="btn">Log In</button>
+        <div class="separator">Or</div>
+        <button type="button" class="btn">Create New Account</button>
+        <div class="or">Forgot Password?</div>
+    </form>
+</div>
+</body>
+</html>
